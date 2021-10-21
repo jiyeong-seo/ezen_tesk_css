@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* 전체 영역
+======================================== */
+/* 버튼 처리 */
+.btn {
+  background-image: none;
+  box-shadow: none;
+}
+/* nav 영역
+======================================== */
+/* nav 영역 처리 */
+.navbar {
+  background-image: none;
+}
+.navbar-radius {
+  border-radius: 0;
+}
+/* jumbotron 영역
+======================================== */
+.jumbotron {
+  padding: 100px 0 60px 0;
+}
+/* jumbotron 버튼 아이콘 처리 */
+.jumbo-btn-i {
+  font-size: 5px;
+}
+/* 본문 영역
+======================================== */
+/* 제목 폰트 처리 */
+.row h3 {
+  font-size: 30px;
+}
+/* 본문 버튼 아이콘 처리 */
+.btn-i {
+  font-size: 1px;
+}
+/* 하단 영역
+======================================== */
+hr {
+  margin-top: 33px;
+}
