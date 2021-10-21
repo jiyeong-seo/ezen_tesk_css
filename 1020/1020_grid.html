@@ -1,0 +1,171 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+    />
+    <title>Bootstrap grid examples</title>
+    <style>
+        [class*="col-"] {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+  </head>
+
+<body>
+<!-- Three equal columns -->
+  <div class="container">
+    <div>
+        <h4>Three equal columns</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+          .col-md-4  
+        </div>
+        <div class="col-md-4"> 
+           .col-md-4
+        </div>
+        <div class="col-md-4"> 
+            .col-md-4
+        </div>
+    </div>
+</div>
+
+<!-- Three unequal columns -->
+<div class="container">
+    <div>
+        <h4>Three unequal columns</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+          .col-md-3  
+        </div>
+        <div class="col-md-6"> 
+           .col-md-6
+        </div>
+        <div class="col-md-3"> 
+            .col-md-3
+        </div>
+    </div>
+</div>
+
+<!-- Two columns -->
+<div class="container">
+    <div>
+        <h4>Two columns</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+</div>
+
+<hr>
+
+<!-- Two columns with two nested columns -->
+<div class="container">
+    <div>
+        <h4>Two columns with two nested columns</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-6">.col-md-6</div>
+                <div class="col-md-6">.col-md-6</div>
+            </div>
+        </div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+</div>
+
+<hr>
+<!-- Mixed: mobile and desktop -->
+<div class="container">
+    <div>
+        <h4>Mixed: mobile and desktop</h4>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <hr>
+<div class="row">
+    <div class="col-xs-6">.col-xs-6</div>
+    <div class="col-xs-6">.col-xs-6</div>
+</div>
+</div>
+
+<hr>
+<!-- Mixed: mobile, tablet, and desktop -->
+<div class="container">
+    <div>
+        <h4>Mixed: mobile, tablet, and desktop</h4>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-8 ">.col-xs-12 .col-sm-6 .col-lg-8</div>
+        <div class="col-sm-6 col-lg-4 ">.col-sm-6 .col-lg-4</div>
+    </div>
+    <hr>
+<div class="row">
+    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+    <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+</div>
+</div>
+<hr>
+<!-- Column clearing -->
+<div class="container">
+    <div>
+        <h4>Column clearing</h4>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3
+        </div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3
+        </div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3
+        </div>
+        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3
+        </div>
+    </div>
+</div>
+<hr>
+<!-- Offset, push, and pull resets -->
+<div class="container">
+    <div>
+        <h4>Offset, push, and pull resets</h4>
+    </div>
+    <div class="row">
+        <div class="col-sm-5 col-md-6">col-sm-5 col-md-6</div>
+        <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+    </div>
+</div>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
