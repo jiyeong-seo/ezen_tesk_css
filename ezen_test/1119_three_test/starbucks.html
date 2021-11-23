@@ -1,38 +1,49 @@
+<!-- 
+* @filename : starbucks.html
+* @author : 서지영(jen.jyseo@gmail.com)
+* @description : 스타벅스 메인 페이지를 클론한 HTML코드
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Starbucks Coffee Korea</title>
+    <!-- 크로스 브라우징 호환성 부분 시작 -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <!-- 크로스 브라우징 호환성 부분 끝 -->
+    <!-- CSS파일 -->
+    <link rel="stylesheet" type="text/css" href="css/starbucks.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div>
+    <div id="header">
+      <div id="headerInner">
         <div>
           <!-- header - 스타벅스 로고 -->
           <h1 id="headerLogo">
             <a href="https://www.starbucks.co.kr/index.do"></a>
           </h1>
           <!-- header - 스타벅스 회원 메뉴 -->
-          <nav>
+          <nav id="headerNav">
             <ul>
-              <li>
+              <li id="headerNav1">
                 <a href="https://www.starbucks.co.kr/login/login.do">Sing in</a>
               </li>
-              <li>
+              <li id="headerNav2">
                 <a
                   href="https://www.starbucks.co.kr/login/login.do?redirect_url=%2Fmy%2Findex.do"
                   >My starbucks</a
                 >
               </li>
-              <li>
+              <li id="headerNav3">
                 <a href="https://www.starbucks.co.kr/util/index.do"
                   >Customer Service & ideas</a
                 >
               </li>
-              <li>
+              <li id="headerNav4">
                 <a href="https://www.starbucks.co.kr/store/store_map.do"
                   >Find a Store</a
                 >
@@ -40,25 +51,24 @@
             </ul>
           </nav>
           <!-- header - 검색 버튼 -->
-          <p>
-            <input type="text" />
-            <button>
-              <img src="css/img/serch.png" alt="serch" />
-            </button>
+          <p id="headerBtn">
+            <a href="#"><img alt="통합검색" src="css/img/serch.png" /></a>
+            <!-- 돋보기 클릭시 input 출력 -->
+            <input id="headerSearch" placeholder="통합검색" type="text" />
           </p>
         </div>
         <!-- header - starbucks 메뉴 -->
-        <nav>
-          <div>
+        <nav id="headerNavMenu">
+          <div id="headerNavMenuInner">
             <ul>
-              <li>
+              <li id="headerNavMenu1">
                 <div>
-                  <a href="">COFFEE</a>
+                  <a href="#">COFFEE</a>
                 </div>
                 <!-- COFFEE nav hover시 나타나는 메뉴 -->
-                <div>
-                  <ul>
-                    <li>
+                <div class="headerNavMenuSide">
+                  <div class="headerNavMenuSideInner">
+                    <div class="headerNavMenuSideList">
                       <ul>
                         <li><a href="">커피</a></li>
                         <li><a href="">스타벅스 원두</a></li>
@@ -100,7 +110,7 @@
                         <li><a href="">스타벅스 디카페인</a></li>
                         <li><a href="">클로버® 커피 추출 시스템</a></li>
                       </ul>
-                    </li>
+                    </div>
                     <!-- coffee hover시 nav 하단 베너 -->
                     <div>
                       <h3>
@@ -114,17 +124,18 @@
                         여러가지 방법을 통해 다양한 풍미의 커피를 즐겨보세요.
                       </p>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </li>
-              <li>
+
+              <li id="headerNavMenu2">
                 <div>
                   <a href="">MENU</a>
                 </div>
                 <!-- MENU nav hover시 나타나는 메뉴 -->
-                <div>
-                  <ul>
-                    <li>
+                <div class="headerNavMenuSide">
+                  <div class="headerNavMenuSideInner">
+                    <div class="headerNavMenuSideList">
                       <ul>
                         <li><a href="">음료</a></li>
                         <li><a href="">콜드 브루</a></li>
@@ -169,7 +180,7 @@
                         <li><a href="">콜드 브루</a></li>
                         <li><a href="">스타벅스 티바나</a></li>
                       </ul>
-                    </li>
+                    </div>
 
                     <!-- Menu hover시 nav 하단 베너 -->
                     <div>
@@ -181,17 +192,17 @@
                         부드러운 크림을 경험하세요.
                       </p>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li id="headerNavMenu3">
                 <div>
                   <a href="">STORE</a>
                 </div>
                 <!-- STORE nav hover시 나타나는 메뉴 -->
-                <div>
-                  <ul>
-                    <li>
+                <div class="headerNavMenuSide">
+                  <div class="headerNavMenuSideInner">
+                    <div class="headerNavMenuSideList">
                       <ul>
                         <li><a href="">매장 찾기</a></li>
                         <li><a href="">퀵 검색</a></li>
@@ -210,7 +221,7 @@
                         <li><a href="">매장 이야기</a></li>
                         <li><a href="">티바나 바 매장</a></li>
                       </ul>
-                    </li>
+                    </div>
                     <!-- STORE hover시 nav 하단 베너 -->
                     <div>
                       <h3>
@@ -218,17 +229,17 @@
                       </h3>
                       <p>보다 빠르게 매장을 찾아보세요.</p>
                     </div>
-                  </ul>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li id="headerNavMenu4">
                 <div>
                   <a href="">RESPONSIBILITY</a>
                 </div>
                 <!-- RESPONSIBILITY nav hover시 나타나는 메뉴 -->
-                <div>
-                  <ul>
-                    <li>
+                <div class="headerNavMenuSide">
+                  <div class="headerNavMenuSideInner">
+                    <div class="headerNavMenuSideList">
                       <ul>
                         <li><a href="">사회공헌 캠페인 소개</a></li>
                       </ul>
@@ -259,18 +270,18 @@
                         <li><a href="">스타벅스 재단</a></li>
                         <li><a href="">지구촌 봉사의 달</a></li>
                       </ul>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li id="headerNavMenu5">
                 <div>
                   <a href="">STARBUCKS REWARDS</a>
                 </div>
                 <!-- STARBUCKS REWARDS nav hover시 나타나는 메뉴 -->
-                <div>
-                  <ul>
-                    <li>
+                <div class="headerNavMenuSide">
+                  <div class="headerNavMenuSideInner">
+                    <div class="headerNavMenuSideList">
                       <ul>
                         <li><a href="">음료</a></li>
                         <li><a href="">콜드 브루</a></li>
@@ -304,28 +315,28 @@
                         <li><a href="">커피 용품</a></li>
                         <li><a href="">패키지 티(티바나)</a></li>
                       </ul>
-                      <!-- STARBUCKS REWARDS hover시 nav 하단 베너 -->
-                      <div>
-                        <h3>
-                          <a href="">나이트로 콜드 브루</a>
-                        </h3>
-                        <p>
-                          나이트로 커피 정통의 물결치듯 흘러내리는 캐스케이딩과
-                          부드러운 크림을 경험하세요.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
+                    <!-- STARBUCKS REWARDS hover시 nav 하단 베너 -->
+                    <div>
+                      <h3>
+                        <a href="">나이트로 콜드 브루</a>
+                      </h3>
+                      <p>
+                        나이트로 커피 정통의 물결치듯 흘러내리는 캐스케이딩과
+                        부드러운 크림을 경험하세요.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </li>
-              <li>
+              <li id="headerNavMenu6">
                 <div>
                   <a href="">WHAT'S NEW</a>
                 </div>
                 <!-- WHAT'S NEW nav hover시 나타나는 메뉴 -->
-                <div>
-                  <ul>
-                    <li>
+                <div class="headerNavMenuSide">
+                  <div class="headerNavMenuSideInner">
+                    <div class="headerNavMenuSideList">
                       <ul>
                         <li><a href="">이벤트</a></li>
                         <li><a href="">전체</a></li>
@@ -358,31 +369,31 @@
                       <ul>
                         <li><a href="">월페이퍼</a></li>
                       </ul>
-                      <!-- WHAT'S NEW hover시 nav 하단 베너 -->
-                      <div>
-                        <h3>
-                          <a href="">나이트로 콜드 브루</a>
-                        </h3>
-                        <p>
-                          스타벅스의 매장 이벤트 정보를 확인 하실 수 있습니다.
-                        </p>
-                        <h3>
-                          <a href="">월페이퍼</a>
-                        </h3>
-                        <p>
-                          매월 업데이트되는 월페이퍼(PC/Mobile)로 스타벅스를
-                          더욱 가깝게 즐겨보세요!
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
+                    </div>
+                    <!-- WHAT'S NEW hover시 nav 하단 베너 -->
+                    <div>
+                      <h3>
+                        <a href="">나이트로 콜드 브루</a>
+                      </h3>
+                      <p>
+                        스타벅스의 매장 이벤트 정보를 확인 하실 수 있습니다.
+                      </p>
+                      <h3>
+                        <a href="">월페이퍼</a>
+                      </h3>
+                      <p>
+                        매월 업데이트되는 월페이퍼(PC/Mobile)로 스타벅스를 더욱
+                        가깝게 즐겨보세요!
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-    </header>
+    </div>
 
     <!-- main -->
     <div id="container">
@@ -784,5 +795,21 @@
         </div>
       </div>
     </footer>
+
+    <!-- script -->
+    <script>
+      /* 상단 돋보기 클릭시 인풋창 출력 */
+      document.querySelector("#headerBtn").addEventListener("click", (e) => {
+        e.preventDefault();
+        // input의 display를 변경
+        document.querySelector("#headerSearch").style.display = "inline-block";
+        // input을 감싸는 p의 넓이도 변경
+        document.querySelector("#headerBtn").style.width = "180px";
+        //상단 스타벅스 회원 메뉴창 좌측으로 이동
+        document.querySelector("#headerNav").style.right = "232px";
+      });
+      /* 상단 스타벅스 인풋창 hover시 서브 리스트 출력 */
+      
+    </script>
   </body>
 </html>
