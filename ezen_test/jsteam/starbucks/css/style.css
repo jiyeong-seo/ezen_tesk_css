@@ -549,30 +549,30 @@ a {
   top: 0px;
   width: 35px;
 }
-#BannerRightInnerBtn>img {
+#BannerRightInnerBtn > img {
   width: 100%;
 }
 /* 메인 -> 스타벅스 리워드 영역 처리
 ======================================== */
-#rewards{
+#rewards {
   padding-top: 30px;
   padding-bottom: 40px;
   background-color: #1e3932;
 }
-#rewardsInner{
+#rewardsInner {
   max-width: 1080px;
   margin: 0 auto;
 }
 /* 메인 -> 스타벅스 리워드 로고 영역 처리,설정
 ======================================== */
-#rewardsLogo{
+#rewardsLogo {
   float: left;
-    width: 16.3%;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
+  width: 16.3%;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
 }
-#rewardsLogo>img{
+#rewardsLogo > img {
   width: 176px;
 }
 /* 메인 -> 스타벅스 리워드 텍스트 영역 처리,설정
@@ -587,14 +587,514 @@ a {
 }
 /* 메인 -> 스타벅스 리워드 회원가입 레이아웃 설정
 ======================================== */
-#rewardsJoinLogin{
+#rewardsJoinLogin {
   position: relative;
   margin-bottom: 22px;
   border-bottom: 1px solid #4b615b;
 }
 /* 메인 -> 스타벅스 리워드 회원가입 텍스트 설정
 ======================================== */
-#rewardsJoinLogintxt{
+#rewardsJoinLogintxt {
   margin-bottom: 12px;
 }
+#rewardsJoinLogintxt > h2 {
+  line-height: 1.4;
+  margin-bottom: 12px;
+  font-size: 26px;
+  font-weight: normal;
+}
+#rewardsJoinLogintxt > p {
+  line-height: 1.4;
+  font-size: 17px;
+}
+/* 메인 -> 스타벅스 리워드 회원가입/로그인 버튼 설정
+======================================== */
+#rewardsJoinLoginBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+#rewardsJoinLoginBtn > a {
+  display: inline-block;
+  height: 38px;
+  line-height: 36px;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#rewardsJoinBtn {
+  background-color: #00704a;
+  border: 2px solid #00704a;
+}
+#rewardsLoginBtn {
+  margin-left: 9px;
 
+  border: 2px solid #fff;
+}
+/* 메인 -> 스타벅스 리워드 기프트카드 영역 처리,설정
+======================================== */
+#rewardsEGift {
+  position: relative;
+}
+#rewardsEGitftxt > p {
+  line-height: 1.4;
+  font-size: 14px;
+}
+/* 메인 -> 스타벅스 리워드 기프트카드 버튼 설정
+======================================== */
+#rewardsEGiftBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 183px;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+#rewardsEGiftBtn > a {
+  display: block;
+  color: #fff;
+}
+/* 메인 -> 크리스마스 블랜드 영역 처리,설정
+======================================== */
+#christmasBlend {
+  overflow: hidden;
+  position: relative;
+  height: 573px;
+  background: #ff9ba1 url(img/2021_christmas_bean_bg.jpg) no-repeat 50% 50%;
+  background-size: 100% 100%;
+}
+#christmasBlendInner {
+  position: relative;
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
+}
+/* 메인 -> 크리스마스 블랜드 이미지 설정
+======================================== */
+#christmasBlendImg {
+  top: 50%;
+  margin-top: -18%;
+  width: 44.81481481481481%;
+  right: 45.64814814814815%;
+  position: absolute;
+  left: 9.53704%;
+}
+/* 메인 -> 크리스마스 블랜드 텍스트 설정
+======================================== */
+#christmasBlendTxt {
+  top: 32%;
+  width: 29%;
+  right: 17%;
+  position: absolute;
+}
+/* 메인 -> 크리스마스 블랜드 버튼 설정
+======================================== */
+#christmasBlendBtn {
+  margin-top: 39px;
+  width: 125px;
+}
+#christmasBlendBtn > a {
+  color: #453d3d;
+  border: 2px solid #453d3d;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  line-height: 34px;
+  border-radius: 5px;
+  text-align: center;
+}
+/* 메인 -> reserve the merry 영역 처리,배경 설정
+======================================== */
+#reserveTheMarry {
+  background-image: url(img/reserve_christmas_bean_211018.jpg);
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+#reserveTheMarryInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* 메인 -> reserve the merry 타이틀 레이아웃 설정
+======================================== */
+#reservetitle {
+  position: relative;
+  z-index: 10;
+  padding-top: 143px;
+  max-width: 1100px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+#reservetitle > img {
+  width: auto;
+}
+/* 메인 -> reserve the merry 버튼 설정
+======================================== */
+#reserveBtn {
+  position: relative;
+  z-index: 10;
+  max-width: 1100px;
+  margin: -10px auto 0;
+}
+#reserveBtnInner {
+  padding-left: 283px;
+  width: 583px;
+}
+#reserveBtnInner > a {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  color: #d5a012;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  border: 2px solid #d5a012;
+  border-radius: 5px;
+}
+/* 메인 -> pick your favorit 영역 처리,배경 설정
+======================================== */
+#pickYourFavorite {
+  background: url(img/fav_prod_bg_new.jpg) center center fixed no-repeat #45434c;
+  background-size: auto 100%;
+  height: 800px;
+  position: relative;
+}
+#pickYourFavoriteInner {
+  left: 50%;
+  margin-left: -640px;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+/* 메인 -> pick your favorit 타이틀 설정
+======================================== */
+#pickYourFavoriteTitle {
+  background: url(img/fav_prod_txt01.png) no-repeat;
+  height: 204px;
+  left: 200px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -20000px;
+  top: 120px;
+  width: 258px;
+  z-index: 7;
+}
+/* 메인 -> pick your favorit 서브 타이틀 설정
+======================================== */
+#pickYourFavoriteSubtitle {
+  background: url(img/fav_prod_txt02.png);
+  height: 156px;
+  left: 92px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -20000px;
+  top: 370px;
+  width: 362px;
+  z-index: 7;
+}
+/* 메인 -> pick your favorit 이미지 설정
+======================================== */
+#pickYourFavoriteImg {
+  top: 100px;
+  right: -10px;
+  width: 672px;
+  height: 458px;
+  background: url(img/2021_christmas_fav.png);
+  position: absolute;
+  z-index: 7;
+  text-indent: -20000px;
+}
+/* 메인 -> pick your favorit 버튼 설정
+======================================== */
+#pickYourFavoriteBtn {
+  width: 125px;
+  height: 38px;
+  left: 328px;
+  position: absolute;
+  top: 570px;
+  z-index: 7;
+}
+#pickYourFavoriteBtn > a {
+  font-size: 15px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  height: 100%;
+  line-height: 34px;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.7s, color 0.7s;
+}
+/* 메인 -> reserve magazine 영역 처리,배경 설정
+======================================== */
+#reserveMagazine {
+  background: url(img/reserve_bg_pc.png) no-repeat 50% 100%;
+  position: relative;
+  height: 400px;
+  background-size: auto 353px;
+}
+#reserveMagazineInner {
+  position: relative;
+  margin: 0 auto;
+}
+/* 메인 -> reserve magazine 영역 처리,배경 설정
+======================================== */
+#reserveMagazineTitle {
+  position: relative;
+  z-index: 10;
+  padding-top: 135px;
+  padding-left: 55px;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 메인 -> reserve magazine 이미지 설정
+======================================== */
+#reserveMagazineImage {
+  display: block;
+  position: absolute;
+  bottom: auto;
+  top: 0;
+  right: 50%;
+  margin-right: -483px;
+}
+/* 메인 -> reserve magazine 버튼 설정
+======================================== */
+#reserveMagazineBtn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  max-width: 1100px;
+  margin: 33px auto 0;
+  box-sizing: border-box;
+}
+#reserveMagazineBtnInner {
+  padding-left: 225px;
+  width: 583px;
+}
+#reserveMagazineBtnInner > a {
+  display: block;
+  margin: 0 auto;
+  width: 125px;
+  height: 100%;
+  color: #000;
+  font-size: 15px;
+  line-height: 34px;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+/* 메인 -> 스타벅스를 가까이에서 경험해보세요 영역처리,배경 설정
+======================================== */
+#store {
+  background: url(img/store_bg.jpg);
+  background-size: 100% auto;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#storeInner {
+  left: 50%;
+  margin-left: -640px;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+/* 메인 -> 스타벅스를 가까이에서 경험해보세요 이미지 레이아웃 설정
+======================================== */
+#storeInsideImg {
+  background: url(img/store_exp_img01.png);
+  height: 228px;
+  left: 390px;
+  position: absolute;
+  top: 149px;
+  width: 228px;
+  z-index: 5;
+}
+#storeTakeoutImg {
+  background: url(img/store_exp_img02.png);
+  height: 312px;
+  left: 160px;
+  position: absolute;
+  top: 0;
+  width: 366px;
+  z-index: 4;
+}
+#storeCoffeBenImg {
+  background: url(img/store_exp_img03.png);
+  height: 142px;
+  left: 520px;
+  position: absolute;
+  top: -60px;
+  width: 343px;
+  z-index: 4;
+}
+#storeImg {
+  background: url(img/store_exp_img04.png);
+  height: 102px;
+  position: absolute;
+  right: 30px;
+  top: 298px;
+  width: 230px;
+  z-index: 4;
+}
+/* 메인 -> 스타벅스를 가까이에서 경험해보세요 텍스트 이미지 레이아웃 설정
+======================================== */
+#storeTitleImg {
+  background: url(img/store_txt01.png);
+  height: 54px;
+  position: absolute;
+  right: 149px;
+  overflow: hidden;
+  top: 100px;
+  width: 385px;
+  z-index: 4;
+}
+#storetxt {
+  background: url(img/store_txt02.png);
+  height: 61px;
+  position: absolute;
+  right: 168px;
+  overflow: hidden;
+  top: 168px;
+  width: 366px;
+  z-index: 4;
+}
+/* 하단 -> 하단 영역 처리
+======================================== */
+#footer {
+  padding: 32px 0 35px 0;
+  background: #2c2a29;
+  clear: both;
+  position: relative;
+  width: 100%;
+}
+/* 하단 -> 하단 메뉴 리스트 영역 처리,레이아웃 설정
+======================================== */
+#footerInner {
+  margin-left: -591px;
+  width: 1182px;
+  background: url(img/footer_logo.png) right 8px no-repeat;
+  display: inline-block;
+  left: 50%;
+  position: relative;
+}
+#footerList ul {
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 30px;
+}
+/* 하단 -> 하단 메뉴 리스트 각각 타이틀 설정
+======================================== */
+#footerList .footerListTitle {
+  font-size: 14px;
+  line-height: 40px;
+  color: #fff;
+}
+#footerList > ul > li > a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  width: 100%;
+}
+/* 하단 -> 수상내역 영역 처리
+======================================== */
+#footerAward {
+  height: 80px;
+  margin-top: 40px;
+  background: #282828;
+  position: relative;
+  width: 100%;
+  padding-top: 20px;
+}
+#footerAwardInner {
+  position: absolute;
+  left: 50%;
+  margin-left: -591px;
+  width: 1182px;
+  padding-bottom: 20px;
+}
+/* 하단 -> 수상내역 리스트 레이아웃 설정
+======================================== */
+#footerAwardList {
+  position: relative;
+}
+#footerAwardList li {
+  float: left;
+  position: relative;
+}
+#footerAwardList li a {
+  display: block;
+}
+/* 하단 -> footer copyright 영역 처리
+======================================== */
+#copyright {
+  font-size: 12px;
+  line-height: 18px;
+  margin-left: -50%;
+  padding-top: 30px;
+  text-align: center;
+  width: 100%;
+  left: 50%;
+  position: relative;
+  color: #999;
+}
+#copyright .copyrightList {
+  border-right: 1px solid #393939;
+  font-size: 12px;
+  padding: 0 10px;
+  display: inline-block;
+  color: #ccc;
+}
+#copyright .copyrightList.firstCopy {
+  color: #00b050;
+}
+/* 하단 -> footer copyright 버튼 레이아웃,설정
+======================================== */
+.copyrightBtn {
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 2px 0 3px;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+}
+/* 하단 -> 사업자등록,주소 등 영역 처리,레이아웃 설정
+======================================== */
+#copyrightAddressList {
+  padding: 25px 0 5px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#copyrightAddressList li {
+  display: inline-block;
+  margin: 0 7px;
+}
+/* 하단 -> copyright 영역 처리,스타일 설정
+======================================== */
+#copyrightAddress {
+  display: inline-block;
+  margin: 10px 0 20px 0;
+}
