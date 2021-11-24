@@ -35,6 +35,10 @@ a {
 }
 /* 상단 영역 정의
 ======================================== */
+#headerRap {
+  height: 120px;
+  position: relative;
+}
 #header {
   background: #f6f5ef;
   border-bottom: 1px solid #e5e5e5;
@@ -210,10 +214,17 @@ a {
   text-align: center;
   width: 100%;
 }
+/* 상단 스타벅스 메뉴 리스트 hover시 a요소 처리
+======================================== */
+#headerNavMenuInner > ul > li > div > a:hover {
+  background: #2c2a29;
+  color: #669900;
+  text-decoration: underline;
+}
 /* 상단 스타벅스 메뉴 서브 리스트 영역 처리
 ======================================== */
 .headerNavMenuSide {
-  /* display: none; */
+  display: none;
   left: 0;
   top: 66px;
   background: #2c2a29;
@@ -225,11 +236,365 @@ a {
   display: inline-block;
   width: 100%;
 }
-.headerNavMenuSideList{
+.headerNavMenuSideList {
+  left: 50%;
+  position: relative;
+  margin-left: -550px;
+  width: 1100px;
+}
+/* 상단 스타벅스 메뉴 서브 리스트 레이아웃 설정
+======================================== */
+.headerNavMenuSideUl {
+  width: 220px;
   float: left;
-    left: 20px;
-    margin-left: 0;
-    position: relative;
-    width: 100%;
+}
+/* 상단 스타벅스 메뉴 서브 리스트 서브 첫번째 li요소(제목 형식) li,a요소 처리
+======================================== */
+.headerNavMenuSideUl > .headerNavMenuSideFirst {
+  padding-bottom: 12px;
+  float: left;
+  padding: 3px 0;
+  width: 100%;
+}
+.headerNavMenuSideUl > .headerNavMenuSideFirst > a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* 상단 스타벅스 메뉴 서브 리스트 li,a요소 처리
+======================================== */
+.headerNavMenuSideUl > li {
+  float: left;
+  padding: 3px 0;
+  width: 100%;
+}
+.headerNavMenuSideUl > li > a {
+  font-size: 12px;
+  color: #999;
+}
+/* 상단 스타벅스 메뉴 서브 리스트 토글 ---------------> 수정
+======================================== */
+.on {
+  display: block;
+}
+
+/* 메인 영역 정의
+======================================== */
+#container {
+  width: 100%;
+}
+/* 메인 -> CARRY the MERRY 영역 정의
+======================================== */
+#topSection {
+  height: 645px;
+  background: #d1131d no-repeat 50% 50%;
+  background-size: cover;
+}
+#topSectionInner {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* 메인 -> CARRY the MERRY 레이아웃 설정
+======================================== */
+#topTitle {
+  position: absolute;
+  bottom: 71%;
+  z-index: 4;
+  margin-left: -542px;
+  width: 328px;
+  max-width: 328px;
+  left: 50%;
+}
+#topTitle > img {
+  max-width: 100%;
+}
+/* 메인 -> CARRY the MERRY 음료 이미지 설정
+======================================== */
+#topDrinkImages {
+  max-width: 100%;
+  position: static;
+  margin: 0;
+  height: inherit;
+}
+#topImg1 {
+  width: 27%;
+  right: 50%;
+  margin-right: -5%;
+  max-width: 295px;
+  bottom: 63px;
+  z-index: 2;
+  position: absolute;
+}
+#topImg2 {
+  width: 46%;
+  right: 50%;
+  margin-right: -38%;
+  max-width: 503px;
+  bottom: 79px;
+  z-index: 1;
+  position: absolute;
+}
+#topImg3 {
+  width: 21%;
+  right: -4%;
+  max-width: 236px;
+  bottom: 63px;
+  z-index: 3;
+  position: absolute;
+}
+/* 메인 -> CARRY the MERRY 리본 이미지 설정
+======================================== */
+#topDrinkImages::before {
+  left: -4%;
+  bottom: 0;
+  width: 348px;
+  height: 280px;
+  background: url(img/2021_chiristmas_bg_left.png) no-repeat 50% 100%;
+  background-size: contain;
+  content: "";
+  display: block;
+  position: absolute;
+}
+#topDrinkImages::after {
+  right: 3%;
+  top: 0;
+  width: 249px;
+  height: 160px;
+  background: url(img/2021_chiristmas_bg_right.png) no-repeat 50% 0%;
+  background-size: contain;
+  content: "";
+  display: block;
+  position: absolute;
+}
+/* 메인 -> CARRY the MERRY 버튼 제어
+======================================== */
+#topbutton {
+  top: 34.98452012383901%;
+  z-index: 5;
+  margin-left: -542px;
+  width: 328px;
+  max-width: 328px;
+  left: 50%;
+  position: absolute;
+  height: 38px;
+}
+#topbutton > a {
+  width: 129px;
+  margin: 0 auto;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  display: block;
+  font-size: 15px;
+  line-height: 34px;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* 메인 -> 공지사항/스타벅스 프로모션 영역 처리
+======================================== */
+#mainBanner {
+  height: 62px;
+  position: relative;
+  width: 100%;
+}
+#mainBannerLeft {
+  height: 62px;
+  width: 50%;
+  background: #111;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#mainBannerRight {
+  height: 62px;
+  width: 50%;
+  background: #f6f5ef;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* 메인 -> 공지사항/스타벅스 프로모션 배경 레이아웃 설정
+======================================== */
+#mainBannerBack {
+  background: url(img/line_notice_bg.jpg);
+  height: 62px;
+  left: 50%;
+  margin-left: -640px;
+  width: 1280px;
+  position: absolute;
+  top: 0;
+}
+/* 메인 -> 공지사항 레이아웃 설정
+======================================== */
+#BannerLeft {
+  height: 62px;
+  width: 730px;
+  float: left;
+}
+#BannerLeftInner {
+  height: 36px;
+  margin: 13px 0 0 89px;
+  width: 621px;
+  float: left;
+}
+/* 메인 -> 공지사항 dl제어
+======================================== */
+#BannerLeftInner > #BannerLeftInnerList {
+  height: 33px;
+  width: 494px;
+  float: left;
+  position: relative;
+}
+/* 메인 -> 공지사항 dt제어
+======================================== */
+#BannerLeftInner > #BannerLeftInnerList > dt {
+  background: url(img/notice_ttl.png);
+  background-size: 65px auto;
+  height: 17px;
+  left: 100px;
+  top: 10px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -20000px;
+  width: 65px;
+}
+
+/* 메인 -> 공지사항 dd제어 
+======================================== */
+#BannerLeftInner > #BannerLeftInnerList > dd {
+  position: absolute;
+  left: 65px;
+  top: 9px;
+  width: 520px;
+  height: 24px;
+  text-indent: 15px;
+  overflow: hidden;
+}
+/* 메인 -> 공지사항 dd -> ul 제어  --------------> js 효과 주기 
+======================================== */
+/* 메인 -> 공지사항 버튼 제어
+======================================== */
+#BannerLeftInnerBtn {
+  height: 36px;
+  width: 36px;
+  float: right;
+  position: relative;
+}
+#BannerLeftInnerBtn > span {
+  background-size: 35px;
+  height: 36px;
+  left: 0;
+  top: 0;
+  width: 36px;
+  position: absolute;
+  background: url(img/btn_notice_plus.png) 0 0 no-repeat;
+  background-size: 100% auto;
+}
+#BannerLeftInnerBtn > span > a {
+  text-indent: -20000px;
+  display: block;
+}
+/* 메인 -> 스타벅스 프로모션 레이아웃 설정
+======================================== */
+#BannerLeft {
+  height: 62px;
+  width: 730px;
+  float: left;
+}
+#BannerLeftInner {
+  height: 36px;
+  margin: 13px 0 0 89px;
+  width: 621px;
+  float: left;
+}
+/* 메인 -> 스타벅스 프로모션 레이아웃 설정
+======================================== */
+#BannerRightInner {
+  height: 62px;
+  width: 550px;
+  z-index: 10;
+  float: right;
+  position: relative;
+}
+#BannerRightInnerTitle {
+  display: block;
+  position: absolute;
+  height: 36px;
+  left: 37%;
+  top: 13px;
+  width: 234px;
+}
+#BannerRightInnerTitle > img {
+  /* background-size: 100% auto; */
+  height: 17px;
+  left: 0;
+  top: 9px;
+  width: 130px;
+  /* background: url(img/prom_ttl_b.png); */
+  overflow: hidden;
+  position: absolute;
+  text-indent: -20000px;
+}
+/* 메인 -> 스타벅스 프로모션 버튼 설정
+======================================== */
+#BannerRightInnerBtn {
+  overflow: hidden;
+  position: absolute;
+  height: 35px;
+  right: 0px;
+  top: 0px;
+  width: 35px;
+}
+#BannerRightInnerBtn>img {
+  width: 100%;
+}
+/* 메인 -> 스타벅스 리워드 영역 처리
+======================================== */
+#rewards{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #1e3932;
+}
+#rewardsInner{
+  max-width: 1080px;
+  margin: 0 auto;
+}
+/* 메인 -> 스타벅스 리워드 로고 영역 처리,설정
+======================================== */
+#rewardsLogo{
+  float: left;
+    width: 16.3%;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+#rewardsLogo>img{
+  width: 176px;
+}
+/* 메인 -> 스타벅스 리워드 텍스트 영역 처리,설정
+======================================== */
+#rewardsContent {
+  box-sizing: border-box;
+  float: left;
+  width: 794px;
+  padding-right: 30px;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+/* 메인 -> 스타벅스 리워드 회원가입 레이아웃 설정
+======================================== */
+#rewardsJoinLogin{
+  position: relative;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #4b615b;
+}
+/* 메인 -> 스타벅스 리워드 회원가입 텍스트 설정
+======================================== */
+#rewardsJoinLogintxt{
+  margin-bottom: 12px;
 }
 
